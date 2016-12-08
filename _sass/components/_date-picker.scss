@@ -1,0 +1,24 @@
+// Datepicker overrides
+
+.datepicker.dropdown-menu {
+  padding: 0 10px 10px !important;
+}
+
+.datepicker-switch {
+  text-align: center;
+}
+
+.next, .prev {
+  cursor: pointer;
+}
+
+td.day {
+  padding: 3px !important;
+  cursor: pointer;
+  text-align: center;
+  &:hover, &.today {
+    background-color: $light-green;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+}

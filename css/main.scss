@@ -1,0 +1,77 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 300;
+$base-line-height: 1.5;
+
+$spacing-unit:     2rem;
+
+// Colors
+
+$black: #333333;
+$mobi-black: #414042;
+$mobi-grey: #5A5657;
+
+$green: #79953E;
+$dark-green: #435A29;
+$light-green: #B1BF41;
+
+$blue: #4285B0;
+$dark-blue: #214E69;
+$light-blue: #9FBCD6;
+
+$red: #DD7227;
+$dark-red: #9F4A24;
+$light-red: #F9B45F;
+
+$yellow: #E5AE23;
+$dark-yellow: #CB8D2B;
+$light-yellow: #FCDC7E;
+
+$status-green: #39B54A;
+$status-yellow: #E5AE23;
+$status-red: #F15A24;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import
+        "base",
+        "components/tables",
+        "components/date-picker",
+        "components/inputs",
+        "components/buckets",
+        "components/status-icons",
+        "layout/header",
+        "layout/layout",
+        "layout/side-filter";

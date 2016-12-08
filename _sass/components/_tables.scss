@@ -1,0 +1,29 @@
+.table {
+  background-color: white;
+  color: $mobi-black;
+  font-size: 0.875 * $base-font-size;
+  th, td {
+    padding: $spacing-unit * 0.25 $spacing-unit * 0.5 0 !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+  }
+  tr:last-child td {
+    padding-bottom: $spacing-unit * 0.5 !important;
+  }
+}
+
+.table {
+  .level-3 td:nth-child(2) {
+    padding-left: 30px !important;
+  }
+  .level-4 td:nth-child(2) {
+    padding-left: 50px !important;
+  }
+  .level-5 td:nth-child(2) {
+    padding-left: 70px !important;
+  }
+}
+
+.table-hierarchy, .table-branches {
+  display: none;
+}

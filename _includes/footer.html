@@ -1,0 +1,19 @@
+<script src="/vendor/slidepushmenus/js/classie.js"></script>
+<script src="/vendor/slidepushmenus/js/modernizr.custom.js"></script>
+<script src="/vendor/bootstrap-datepicker-1/js/bootstrap-datepicker.min.js"></script>
+<script src="/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="/js/helpers.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#headingTwo a').click(function(event){
+            event.preventDefault();
+            $('#subHeadingTwo').toggle();
+        });
+
+        $('#dates input').datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+    });
+</script>

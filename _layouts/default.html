@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="content home filter-open">
+
+      <div class="side-filter">
+        {% include side-filter.html %}
+      </div>
+
+      <div class="page-content">
+        {{ content }}
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

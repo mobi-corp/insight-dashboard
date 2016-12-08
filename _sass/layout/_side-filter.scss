@@ -1,0 +1,57 @@
+.side-filter {
+  @extend .col-xs-3;
+  position: absolute;
+  left: -25%;
+  top: 13rem;
+  z-index: 1000;
+  background-color: $black;
+
+  .wrapper {
+    padding: $spacing-unit;
+    visibility: hidden;
+  }
+  
+  .row {
+    margin-bottom: $spacing-unit;
+    .row {
+      margin-bottom: 0;
+    }
+  }
+  
+  .filter-dates {
+    input {
+      margin-bottom: 15px;
+    }
+  }
+
+  .depth {
+    list-style-type: none;
+  }
+
+  .unknown-jobs * {
+    display: inline-block;
+  }
+  .rangeInput {
+    width: 100px;
+  }
+  .textInput {
+    width: 60px;
+  }
+  
+}
+
+.filter-open .side-filter {
+  left: 0;
+  .wrapper {
+    visibility: visible;
+  }
+}
+
+.toggle-filter {
+  cursor: pointer;
+}
+
+
+
+
+

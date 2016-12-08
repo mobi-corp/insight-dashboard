@@ -1,0 +1,28 @@
+.bucket-status {
+  display: inline-block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  &.small {
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  &.green {
+    background-color: $status-green;
+  }
+  &.yellow {
+    background-color: $status-yellow;
+  }
+  &.red {
+    background-color: $status-red;
+  }
+}
+
+.percent-line {
+  border-bottom: 2px solid grey;
+  width: 100%;
+  display: block;
+}

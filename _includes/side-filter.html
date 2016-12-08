@@ -1,0 +1,100 @@
+<div class="wrapper">
+    <div class="row filter-level">
+        <div class="col-xs-12">
+            <h3>Level</h3>
+            <input type="text" placeholder="Select a level">
+        </div>
+    </div>
+    <div class="row dates" id="dates">
+        <div class="col-xs-12">
+            <h3>Date</h3>
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-3">
+                    <label for="">From</label>
+                </div>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-3">
+                    <label for="">To</label>
+                </div>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row tags">
+        <div class="col-xs-12">
+            <h3>Tags <span class="toggle-filter" id="tags-section">–</span></h3>
+        </div>
+        <div class="col-xs-12 tags-section">
+            Hi
+        </div>
+    </div>
+    <div class="row display">
+        <div class="col-xs-12">
+            <h3>Display <span class="toggle-filter" id="display-section">–</span></h3>
+        </div>
+        <div class="col-xs-12 display-section">
+            <input type="checkbox" id="hierarchy" checked><label for="">Flatten Hierarchy</label>
+        </div>
+        <div class="col-xs-12 display-section">
+            <h4>Depth</h4>
+            <ul class="depth">
+                <li>
+                    <input type="checkbox" checked><label for="">1 (Company)</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked><label for="">2 (Region)</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked><label for="">3 (Work Area)</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="level-4" checked><label for="">4 (Branch)</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="level-5" checked><label for="">5 (Driver)</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row thresholds">
+        <div class="col-xs-12">
+            <h3>Thresholds <span class="toggle-filter" id="thresholds-section">–</span></h3>
+        </div>
+        <div class="col-xs-12 thresholds-section">
+            <select value="unknown jobs">
+                <option value="unknown jobs">unknown jobs</option>
+                <option value="productivity2">productivity2</option>
+                <option value="utilization1">utilization1</option>
+                <option value="utilization2">utilization2</option>
+                <option value="cost1">cost1</option>
+                <option value="cost2">cost2</option>
+                <option value="cost2">cost2</option>
+                <option value="behavior1">behavior1</option>
+                <option value="behavior2">behavior2</option>
+            </select>
+        </div>
+        <div class="col-xs-12 thresholds-section">
+            <div class="unknown-jobs">
+                <div class="col-xs-12">
+                    <label for="">Goal</label>
+                    <input type="range" class="rangeInput" name="rangeInput" min="0" max="10">
+                    <input type="number" class="textInput" min="0" max="10" value="5">
+                    <label for="">jobs</label>
+                </div>
+                <div class="col-xs-12">
+                    <button class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
